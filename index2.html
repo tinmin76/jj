@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .string {
+        background: #1F1F1F;
+        width:100%;
+        height:70px;
+        position:absolute;
+        top:0;
+        left:0;
+        position: fixed;
+        z-index:1;
+        }
+
+        .logo {
+        position:absolute;
+        top:14%;
+        left:1%;
+        }
+
+
+
+@media (max-width: 535px) {
+    .text {
+        font-size:20px;
+        }
+}
+
+@media (max-width: 273px) {
+    .text {
+        font-size:15px;
+        }
+}
+
+@media (max-width: 210px) {
+    .text {
+        font-size:10px;
+        }
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  z-index: 62;
+  position: fixed;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: white;
+  font-size: 29px;
+  text-decoration: none;
+}
+
+@media (max-width: 630px) {
+  .burger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(https://www.iconsdb.com/icons/preview/white/menu-4-xxl.png) no-repeat center center;
+    background-size: cover;
+    z-index: 2;
+    position: fixed;
+
+  }
+
+  .burger-icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+  }
+
+  #burger-toggle {
+    display: none;
+  }
+
+  #burger-toggle:checked + .burger-icon {
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+  }
+
+  .menu ul li {
+    margin-bottom: 20px;
+  }
+
+  .menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .menu ul li a:hover {
+    background-color: #222;
+  }
+
+  #burger-toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+}
+
+#burger-toggle:checked + .burger-icon {
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+        .text {
+        text-align:center;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:19px;
+        position:absolute;
+        top:90px;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+
+        .text1 {
+        text-align:left;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:19px;
+        position:absolute;
+        top:93%%;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .text1 {
+    position: absolute;
+    top: px;
+  }
+}
+
+
+.img1 {
+text-align:center;
+position:absolute;
+top:150px;
+left:0;
+right:0;
+margin:0 auto;
+}
+
+@media screen and (max-width: 395px) {
+  .img1 {
+   top:170px;
+  }
+  @media screen and (max-width: 238px) {
+  .img1 {
+   top:210px;
+  }
+    </style>
+<div class="string">
+    <div class="logo">
+        <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614287842_53-p-chernii-fon-standoff-2-57.jpg" alt="" width="50" height="50">
+
+    </div>
+</div>
+
+
+<input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger-icon"></label>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">RUS</a></li>
+        <li><a href="index1.html">END</a></li>
+        <li><a href="index2.html">DEU</a></li>
+    </ul>
+</nav>
+
+
+<div class="text"><h2>Gründung von St. Petersburg</h2></div>
+
+   <div class="img1">
+    <img src="https://histrf.ru/images/articles/05/TjyKOHuisVx2TwguDdAxul7htIX8GJphYoKihSK9.jpg" class="img-fluid">
+       <div class="text1">„HIER WERDEN WIR DIE SCHWEDEN BEDROHNEN“<br>
+„Nach der Einnahme von Kanets wurde ein Militärrat entsandt, um zu entscheiden, ob der Graben befestigt werden sollte oder ob ein anderer Ort bequemer zu suchen wäre (da er klein ist, weit vom Meer und dem Ort entfernt). ist von Natur aus nicht sehr stark, in dem es sich einen neuen Ort suchen soll), und laut Ein paar Tage später wurde ein geeigneter Ort gefunden – eine Insel namens Lust-Elant, wo am 16. Tag der Maya eine Festung errichtet wurde wurde gegründet und St. Petersburg genannt, wo ein Teil der Armee zurückblieb ...“.<br>
+„Tagebuch oder tägliche Notiz von Peter dem Großen“<br>
+<br>
+
+
+KAISERLICHE HAUPTSTADT<br>
+Am 1. Mai 1703, während der Kämpfe des Nordischen Krieges, eroberten russische Truppen die schwedische Festung Nyenschanz (am Zusammenfluss der Ochta mit der Newa). Der von Peter I. angeführte Militärrat entschied, dass diese Festung nicht für eine weitere Stärkung geeignet sei: Nyenschanz „ist von Natur aus nicht sehr stark“, wie der Zar selbst sagte. Außerdem war Nyenschanz ziemlich weit vom Meer entfernt und die Schweden hatten noch die Möglichkeit, sich auf einer der Inseln des Newa-Deltas zu befestigen. Die Russen wären dann immer noch vom Meer abgeschnitten.<br><br>
+Nachdem er die Inseln des Deltas unabhängig untersucht hatte, fand Peter genau das, was er brauchte: Hare Island, gelegen an der Gabelung der Newa in zwei Arme, nicht weit vom Meer entfernt. Die Insel wurde von allen Seiten von Wasser umspült, das im Falle eines Angriffs zu einer natürlichen Barriere geworden wäre. Von der Insel aus war es möglich, feindliche Schiffe mit vorgehaltener Waffe festzuhalten, egal wo sie in die Newa einfuhren.<br><br>
+Am 16. (27.) Mai 1703, am Tag der Heiligen Dreifaltigkeit, wurde auf der Insel eine Festung gegründet. Dieser Tag gilt als Gründungstag von St. Petersburg. Ihren Namen erhielt die Festung jedoch erst am 29. Juni, als hier am Peterstag die Kirche der Heiligen Peter und Paul gegründet wurde. Peter nannte die neue Festung „St. Petersburg“, und die Stadt, die rund um die Haseninsel entstand, erhielt denselben Namen. Der Apostel Petrus war nach christlicher Überlieferung der Hüter der Schlüssel zum Himmel, und dies schien auch für den russischen Zaren symbolisch: Die Stadt, die den Namen seines himmlischen Schutzpatrons trug, sollte der Schlüssel zur Ostsee werden. Nur wenige Jahre später erhielt die Festung den Namen Peter-und-Paul-Festung – nach dem Namen ihrer Hauptkathedrale.<br><br>
+Der Plan für die zukünftige Festung wurde von Peter selbst entworfen. Die Befestigungsanlagen mussten sehr schnell gebaut werden, um in einem kurzen Sommer fertiggestellt zu werden. Und tatsächlich war die Festung im Herbst 1703 „ungefähr fertig“. In den ersten Jahren wurden seine Mauern aus Erde gegossen, um den Bau zu beschleunigen, doch drei Jahre später – im Jahr 1706 – begann der Bau der Steinbefestigungen.<br><br>
+Unmittelbar nach der Gründung der Festung am Ufer der Newa wurde innerhalb von drei Tagen ein Holzhaus für Peter niedergerissen. Der König wollte, dass sein neues Zuhause den niederländischen Gebäuden ähnelte, die er liebte, deshalb wurden die Wände des Holzhauses mit Ölfarbe bemalt, so dass sie an Ziegel erinnerten. Peter lebte in diesem Haus nur für kurze Zeit und nur im Sommer, aber in Erinnerung an den Gründer von St. Petersburg ist Peters Haus bis heute erhalten geblieben.<br><br>
+Die neue Stadt begann neben der Festung auf der benachbarten Beresow-Insel zu wachsen; diese Insel wurde sogar Gorodski genannt (heute liegt sie auf der Petrograder Seite). Bereits im November 1703 wurde hier die erste Kirche der Stadt eröffnet – in Erinnerung an die Tatsache, dass die Festung am Tag der Heiligen Dreifaltigkeit gegründet wurde, wurde sie auch Dreifaltigkeit genannt. Einige Jahre später wurde die Dreifaltigkeitskathedrale aus Stein wieder aufgebaut und war einige Zeit lang der Haupttempel der Hauptstadt. Hier nahm Peter I. 1721 den Kaisertitel an.<br><br>
+
+<br><br>
+
+NEUE HAUPTSTADT<br>
+„Und vor der jüngeren Hauptstadt verblasste das alte Moskau, wie vor der neuen Königin, der Porphyr tragenden Witwe.“<br><br><br>
+ALS. Puschkin. Bronzener Reiter
+<br><br><br><br>
+
+
+„DIE STADT, DIE HIER SEIN IST“<br>
+St. Petersburg wurde als Ergebnis eines durchdachten Plans von Peter I. und vielen Menschen um ihn herum gegründet. Ende April 1703 untersuchte der Zar auf der Suche nach einem Platz für eine zukünftige Festung sorgfältig die Küste der Newa. Er erkundete das Gebiet nicht alleine, sondern in Begleitung verschiedener Spezialisten. Die Errichtung von Festungen erforderte damals Aufklärung vor Ort, Analyse von Zeichnungen, Tiefenmessungen und die Erörterung vieler technischer Fragen mit Festungsleuten, Artilleristen und Seeleuten. Feofan Prokopovich schrieb in seiner „Geschichte von Kaiser Peter dem Großen“, dass der Zar „auf Wasserschiffen von der Kantsov-Festung entlang der Newa saß, sich um seine Inseln bis zur Meeresmündung kümmerte und fleißig zu argumentieren begann, nicht.“ ohne den Rat anderer Fachkundiger (Personen)“. Wir wissen, dass zu Peters Gefolge damals zwei Festungsspezialisten gehörten: der französische Generalingenieur Joseph Gaspard Lambert de Guerin und der deutsche Ingenieur V. A. Kirschenshein. Der erste fertigte Zeichnungen der Festung Noteburg-Schlisselburg an, die nach dem Angriff von 1702 wiederhergestellt wurde, während der zweite die ersten beiden Pläne für die Festung auf der Newa-Insel anfertigte. Bis zu seinem Tod im Jahr 1705 überwachte Kirshenshein den Bau der Peter-und-Paul-Festung. Großartig ist auch die Rolle von Lambert, einem Nachfolger der Schule des großen französischen Ingenieurs Vauban. Es ist kein Zufall, dass Lambert im Herbst 1703 als Belohnung den Orden des Heiligen Andreas des Erstberufenen erhielt. Peter I. war nie großzügig bei der Verleihung des höchsten und einzigen russischen Ordens dieser Zeit. Vielleicht würdigte er deshalb besonders die Verdienste des Generalingenieurs bei der Gründung der Festung auf der Insel. Darüber hinaus sammelte der Zar selbst nach den Asowschen Feldzügen von 1695–1696 umfangreiche Erfahrungen in der Befestigung. Schließlich musste er sich dann schon lange für einen Ort entscheiden, an dem Taganrog gegründet werden sollte, ebenso wie für die Festung St. Peter an der Donmündung. Es ist kein Zufall, dass eine der Arbeitszeichnungen der Festung auf Hare Island, wie Historiker vermuten, von der Hand des Königs angefertigt wurde.<br><br>
+In der Nacht vom 6. auf den 7. Mai ereignete sich ein weiteres denkwürdiges Ereignis. Dreißig Boote mit Gardisten unter dem Kommando von Peter I. und Menschikow griffen die an der Newamündung stehenden schwedischen Schiffe – eine Shnyava und ein Boot – an und enterten sie. An dem rasanten Nahkampf nahmen nicht nur Menschikow, sondern auch der russische Autokrat selbst teil. Für diese Leistung wurde dem Herrscher der Orden des Heiligen Andreas des Erstberufenen verliehen.    <br><br>
+
+
+
+PETERSBURG – „EINE STADT AUF KNOCHEN“?<br>
+Die Idee von St. Petersburg, aufgebaut auf den Knochen seiner ersten Erbauer, ist immer noch stabil. Ist dieser Mythos wahr? Die Antwort auf diese Frage erfordert die Lösung einer Reihe von Problemen. Welche Bevölkerungsgruppen waren in den ersten zehn Jahren am Aufbau der Stadt beteiligt? Wie hoch war die tatsächliche Zahl der ersten Bauherren und wie viele von ihnen starben auf dieser Baustelle? Was waren die Hauptkrankheitsursachen und woran erkrankten die Arbeiter? Von besonderem Interesse ist die Position der Behörden zur Morbidität und Mortalität im Newa-Delta: Haben sie das gleichgültig betrachtet oder Maßnahmen ergriffen?..<br><br>
+O.G. Ageeva betrachtet Peters Petersburg durch das Prisma des russischen Gesellschaftsbewusstseins des frühen 18. Jahrhunderts und geht ausführlich auf das Thema ein, das uns interessiert. Zum ersten Mal in der Geschichtsschreibung widerspricht der Autor der allgemein anerkannten Meinung und behauptet, dass es in St. Petersburg keine hohe Sterblichkeitsrate gegeben habe. Seine Berechnungen zur Gesamtsterblichkeit in St. Petersburg leitet der Forscher aus einem Dokument aus dem Jahr 1716 ab, wonach von 3.262 arbeitenden Menschen 27 Menschen beim Bau des künftigen Newski-Prospekts starben, das sind 0,74 Prozent. Basierend auf diesem Prozentsatz, O.G. Ageeva schätzt, dass die Baustelle in St. Petersburg jährlich etwa 150 Menschen forderte, also zwischen 1703 und 1715. belief sich auf etwa zweitausend Menschen. Daher kommt der Autor zu dem Schluss, dass die von Ausländern gemeldeten Zahlen um das 50- bis 100-fache überhöht sind und dass es sich bei diesem Phänomen um nichts weiter als Gerüchte, einen Mythos handelt, der die Reaktion der Bevölkerung „auf die Unannehmlichkeiten des St. Petersburger Lebens“ widerspiegelt. Andreeva<br><br>
+E.A. St. Petersburg – „eine Stadt auf Knochen“? (Zur Mythologisierung der Geschichte). Fragen der Philosophie ZWISCHEN OST UND WESTEN
+
+
+<br>
+Die Gründung einer neuen Hauptstadt an der Westgrenze des Staates war nicht nur die Verkörperung der Pläne und Ideale des Gründers, sondern bestimmte auch das gesamte zukünftige Schicksal der Stadt in der historischen und politischen Realität Russlands und in seiner Kultur- und Staatsmythologie. Ab dieser Ära erhielten gegensätzliche Merkmale wie alt/neu, historisch/mythologisch Merkmale des Gegensatzes konzentrisch/exzentrisch, ursprünglich/fremd. Hinter dieser Opposition stand der Gegensatz zweier indigener staatskultureller Modelle.<br><br>
+„Osten“ und „Westen“ erscheinen in der Kulturgeographie Russlands ausnahmslos als reiche Symbole, die auf der geografischen Realität basieren, diese aber tatsächlich zwingend beherrschen. Bezeichnend ist, dass in der russischen Literatur die Geographie zu einem der dominierenden künstlerischen Ausdrucksmittel wird. So führt beispielsweise bei Dostojewski die Entwicklung der Grundideen des Autors natürlich zu einer Erweiterung des geografischen Raums. Im Werk des jungen Dostojewski umfasst St. Petersburg sozusagen den gesamten künstlerischen Raum und erhält dementsprechend das Recht, Russland zu vertreten. Im letzten Werk „Die Brüder Karamasow“ verkörpert Petersburg vielmehr die Krankheit Russlands, seine „Ängste und Schrecken“ (Gogols Ausdruck) – dementsprechend wird „Erholung“ als Russland verstanden, das den Petersburger Ursprung in sich selbst überwindet. Dostojewskis Werk beginnt als natürliche Weiterentwicklung des St. Petersburger Mythos und ist nicht weniger mit dem „St. Petersburger Raum“ verbunden als Puschkins „Der eherne Reiter“.<br><br>
+Yu.M. Lotmann. Moderne zwischen Ost und West. Banner. 1997, Nr. 9
+
+
+</div>
+</div>
+
+</head>
+</body>
+</html>
+
+
